@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+
+  position: relative;
+}
+
+canvas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  margin: 0;
+  font-family: 'Helvetica';
+    
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: black;
+  text-align: center;
+}

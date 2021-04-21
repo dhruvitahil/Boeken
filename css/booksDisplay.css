@@ -1,0 +1,53 @@
+        #box1{
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+         width: 400px;
+         padding: 25px 40px;
+         float: left;
+         height: 450px;
+         margin: 25px 10px;
+         font-size:25px;
+         border: 50px;
+        text-align: center;
+         }     
+         #imagebox{
+         width: 220px;
+         height: 250px;
+         float: center;
+         padding: 10px;
+        align-items: center;
+         }
+         #imagebox:hover{
+          width:310px;
+          height: 260px;
+
+         }
+         .main{
+         background-color: white;
+         height: 100%;
+         min-width: 100%
+         }
+         .buy_button
+         {
+         background-color: white;
+         }
+         .buy_button a:link, .buy_button a:visited {
+          border: none;
+          outline: 0;
+          padding: 10px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 150px;
+          font-size: 18px;
+          text-decoration: none;
+         }
+         .buy_button a:hover, .buy_button a:active {
+         opacity: 0.7;
+         }
+         .price
+         {
+          padding: 25px;
+          color: grey;
+          font-size: 22px;
+         }

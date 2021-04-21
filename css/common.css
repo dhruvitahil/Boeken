@@ -1,0 +1,410 @@
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+body {
+  margin: 0px;
+}
+a{
+  text-decoration: none;
+}
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+form {
+  overflow: hidden;
+}
+.socialicon:hover{
+  opacity: 0.5;
+}
+.footerabout{
+  word-wrap: normal; 
+  width: 300px; 
+  text-align: justify;
+}
+.sub_email input {
+  
+  float: left;
+  padding: 15px 20px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  outline: 0;
+}
+
+&[type=email] {
+  margin-bottom: 15px;
+  border: 1px solid lighten($gray, 50%);
+  @include transition(all .4s);
+}
+
+@media (min-width: 768px) {
+  margin-bottom: 0px;
+  width: 75%;
+  border-right-width: 0px;
+}
+
+&:focus {
+  border-color: $gray;
+}
+
+&[type=submit] {
+  background-color: $purple;
+  color: $white;
+  border: 1px solid $purple;
+  @include transition(all .4s);
+}
+
+@media (min-width: 768px) {
+  width: 25%;
+}
+
+&:hover {
+  cursor: pointer;
+  background-color: darken($purple, 10%);
+  border-color: darken($purple, 10%);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+.nav{
+  height: 100px;
+}
+.nav1{
+  height: 50px;
+
+}
+.bg-img {
+  min-height: 700px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+
+/* Position the navbar container inside the image */
+
+.container {
+  //position: absolute;
+  padding-top: 20px;
+  width: 100%;
+
+  background-image: url("../image/main11.png");
+  background-color: #c2c2c2c2;
+  height: 100px;
+  //width:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#container1 {
+  padding: 5px;
+  width: 100%;
+  background-color: black;
+  height: 50px;
+  overflow: hidden;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* The navbar */
+
+.topnav {
+  overflow: hidden;
+  padding-right: 0px;
+}
+
+
+/* Navbar links */
+
+
+
+.topnav span {
+  color: white;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.topnav .navbar:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .navbar:not(:first-child) {
+    display: none;
+  }
+  .topnav .navbar.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive .navbar {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.discount {
+  min-width: 100%;
+}
+
+.tab {
+  padding: 60px;
+}
+
+.discount_img {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+:root {
+  --mainColor: #ff9800;
+}
+
+.centered a {
+  background: linear-gradient( to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-size .2s;
+}
+
+.centered a:hover {
+  background-size: 4px 50px;
+}
+
+.Avatar {
+  float: none;
+  max-width: 100px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.review {
+  padding: 40px;
+}
+
+.discount_info {
+  padding: 40px;
+}
+
+#book_order_img {
+  float: right;
+}
+
+.book_order {
+  padding: 40px;
+}
+
+.left {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+}
+
+.big {
+  font-size: 30px;
+  text-decoration: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.subscribe {
+  padding: 40px;
+}
+
+.sub_left {
+  float: left;
+}
+
+.sub_right {
+  float: right;
+}
+
+.sub_email {
+  float: right;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+
+
+.topnav .navbar {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar1 {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar1:hover {
+  background-color: #ddd;
+  color: black;
+}
+
